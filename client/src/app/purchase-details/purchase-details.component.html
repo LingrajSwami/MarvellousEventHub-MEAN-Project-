@@ -1,0 +1,50 @@
+<div class="py-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <span class="anchor" id="purchasedetails"></span>
+
+            <!-- purchase pack details -->
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <h3 class="mb-0">Marvellous Infosystem</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="uname1">Marvellous Member Name</label>
+                            <input type="text" class="form-control rounded-0">
+                        </div>
+                        <div class="form-group">
+                            <label>Registration ID</label>
+                            <input type="password" class="form-control rounded-0">
+                        </div>
+                        <div class="form-group">
+                            <label placeholder="example@gmail.com">Email Id</label>
+                            <input type="password" class="form-control rounded-0">
+                        </div>
+                        <div class="form-group">
+                            <label for="courseSelect">Course :</label>
+                            <select id="courseSelect" name="fruit">
+                                <option value="Angular">Angular: Web Development</option>
+                                <option value="Python">Python: Machine Learning</option>
+                                <option value="ML">Machine Learning</option>
+                                <option value="GoLang">GoLang</option>
+                                <option value="IPhone">IPhone Programming</option>
+                                <option value="Android">Android Programming</option>
+                            </select>
+                            <!-- <input type="text" class="form-control rounded-0"> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="uname1">Price </label>
+                            <input type="text" class="form-control rounded-0" value="5000" disabled>
+                        </div>
+                        <button type="button" (click)="purchase()" class="btn btn-success float-right"
+                            routerLink="/thankyou" routerLinkActive="active">Buy</button>
+                    </form>
+                </div>
+                <!--/card-block-->
+            </div>
+            <!-- /form card login -->
+        </div>
+    </div>
+</div>
